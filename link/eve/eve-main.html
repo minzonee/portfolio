@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이브제약</title>
+
+      <!-- 스타일시트 -->
+      <link rel="stylesheet" href="./css/eve-main.css">
+      <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+
+
+      <script type="text/javascript" src="./js/jquery-3.6.0.js" ></script>
+      <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div id="hd-left">
+            <a href="./eve-main.html">
+                <img src="./img/eve-logo1.png" alt="logo">
+            </a>
+        </div>
+        <div id="hd-right">
+            <div class="hd-menu">
+                <a href="./eve-company.html">
+                    회사소개
+                </a>
+            </div>
+            <div class="hd-menu">
+                <a href="./eve-product.html">
+                    제품정보
+                </a>
+            </div>
+            
+            <div class="hd-menu">
+                <a href="./eve-company.html">
+                    연구개발
+                </a>
+            </div>
+            <div class="hd-menu">
+                <a href="./eve-company.html">
+                    고객지원
+                </a>
+            </div>
+            <div class="hd-menu">
+                <a href="./eve-company.html">
+                    채용
+                </a>
+            </div>
+            <div class="hd-menu" style="padding-right:0;">
+                <a href="./eve-company.html">
+                    홍보
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- nav -->
+    <nav>
+        <p>Technology & Innovation</p>
+        <div style="border-bottom:3px solid #fff; width:10%; height:40px;">
+        </div>
+        <br><br><br><br>
+        <span>끊임없는 연구개발로 더 나은 내일에 기여합니다.</span>
+    </nav>
+
+    <!--section1-->
+    <section id="sc1">
+        <div id="sc1-left" class="sc1-div">
+            <p><span>EVE</span>RYONE</p><br><br>
+            다양한 사람의 다양한 니즈를 반영한 제품으로<br>
+            모두가 건강하고 행복한 사회를 꿈꿉니다.
+        </div>
+        <div id="sc1-center" class="sc1-div">
+            <p><span>EVE</span>RYTHING</p><br><br>
+            종합적이고 체계적으로<br>
+            고객의 삶에 다가갑니다.
+        </div>
+        <div id="sc1-right" class="sc1-div">
+            <p><span>EVE</span>RYDAY</p><br><br>
+            활기찬 일상에 이브가 자리하도록<br>
+            건강한 제품을 연구합니다.
+        </div>
+    </section>
+
+    <!--section2-->
+    <section id="sc2">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">
+                  <p>CARE FOR</p><br>
+                  <span>
+                      CARE FOR는 맞춤형 프리바이오틱스 브랜드로<br>
+                      여성을 위한 케어포우먼, 아이를 위한 케어포키즈 라인이 있습니다.
+                  </span><br><br>
+                  <a href="./eve-product.html"><button>view more</button></a>
+              </div>
+              <div class="slideimg">
+                <img src="./img/pd-fy.png" alt="care-for" style="width:100%">
+              </div>
+            </div>
+        
+            <div class="mySlides fade">
+              <div class="numbertext">
+                <p>키즈츄</p><br>
+                <span>
+                    키즈츄는 아이를 위한 츄어블 영양제입니다.<br>
+                    아이에게 하루 한 알로 건강과 즐거움을 챙겨주세요.
+                </span><br><br>
+                <a href="./eve-product.html"><button>view more</button></a>
+              </div>
+              <div class="slideimg">
+                <img src="./img/pd-kc.png" alt="kids-chu" style="width:100%">
+              </div>
+            </div>
+        
+            <div class="mySlides fade">
+              <div class="numbertext">
+                <p>바르겔</p><br>
+                <span>
+                    바르겔은 자생 식물에서 추출한 원료를 사용하여<br>
+                    새살 생성을 원활히 하고 흉터를 최소화하는 상처치료제입니다.
+                </span><br><br>
+                <a href="./eve-product.html"><button>view more</button></a>
+              </div>
+              <div class="slideimg">
+                  <img src="./img/pd-gel.png" alt="barugel" style="width:100%">
+              </div>
+            </div>
+        
+        </div>        
+            <!-- 좌우 화살표 -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+    </section>
+
+    <!-- 슬라이드 스크립트 -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);   // 슬라이드
+        
+        function plusSlides(n) {  // 좌우 화살표 눌렀을때 (+1, -1)
+          showSlides(slideIndex += n); //slideIndex = slideIndex + n
+        }
+        
+        function currentSlide(n) {  // 아래 점을 눌렀을때 (1,2,3)
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+        
+          if (n > slides.length) {slideIndex = 1}    // n값이 3보다 크면 초기값 1로 넣어줌
+          if (n < 1) {slideIndex = slides.length}    // n값이 1보다 작으면 전체값 3을 넣어줌
+        
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";    // 전체가 디스플레이 none
+          }
+          
+          slides[slideIndex-1].style.display = "block";  // slideIndex 1,2,3 일때 [0],[1],[2] block상태           
+          
+        }
+        
+        </script>
+        
+        <script>
+          var slideIndex2 = 0;
+          showSlides2();
+          
+          function showSlides2() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";  
+              }
+              slideIndex2++;
+              if (slideIndex2 > slides.length) {slideIndex2 = 1}    // 사진갯수보다 커지면 다시 1을 적용
+              slides[slideIndex2-1].style.display = "block";  
+              setTimeout(showSlides2, 3000); // Change image every 2 seconds 2초에 한번씩 
+          }
+          </script>
+    
+    <!-- section3 -->
+    <section id="sc3">
+        <div id="sc3-title">보도자료</div>
+        <div class="autoplay">
+            <div class="sc3-slide">
+                <div class="sc3-img">
+                    <img src="./img/news1.jpg" alt="news1">
+                </div>
+                <div class="sc3-text">
+                    <p>(주)이브제약 새학기 청소년 건강 캠페인</p>
+                    주식회사 이브제약이 새학기를 맞이하여 청소년 건강 캠페인을 진행...
+                </div>
+            </div>
+            <div class="sc3-slide">
+                <div class="sc3-img">
+                    <img src="./img/news2.jpg" alt="news2">
+                </div>
+                <div class="sc3-text">
+                    <p>필수 식품으로 자리잡은 유산균.. '이것' 알고 먹어야</p>
+                    코로나 19 이후로 건강기능식품(이하 '건기식')에 대한 수요가 크게...
+                </div>
+            </div><div class="sc3-slide">
+                <div class="sc3-img">
+                    <img src="./img/news3.jpg" alt="news1">
+                </div>
+                <div class="sc3-text">
+                    <p>(주)이브제약 대표 이사 전희숙 '초기 회장 뜻 지켜낼...</p>
+                    여성 건강기능식품 대표 기업 (주)이브제약이 새로운 대표 이사를...
+                </div>
+            </div>
+            <div class="sc3-slide">
+                <div class="sc3-img">
+                    <img src="./img/news4.jpg" alt="news4">
+                </div>
+                <div class="sc3-text">
+                    <p>(주)이브제약, '소비자 선정 스타브랜드 대상' 수상</p>
+                    주식회사 이브제약이 '2021 스타브랜드 대상'에서 제약회사 부문...
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        $('.autoplay').slick({
+            slidesToShow:3,
+            slidesToScroll: 1,
+            autoplay:true,
+            autoplaySpeed: 2000,
+            });
+    </script>
+
+
+
+    <!-- section4 -->
+    <section id="sc4">
+        <div id="sc4-left" class="sc4-div">
+            <div class="sc4-left-title">
+                <div style="float: left;">&nbsp;공지사항</div>
+                <div style="float: right;">+ &nbsp;</div>
+                <br>
+            </div>
+            <div class="sc4-left-list">
+                <ul>
+                    <a href="#"><li>2022년 상반기 (주)이브제약 공개채용</li></a>
+                    <a href="#"><li>(주)이브제약 2021년도 회계정산 공개</li></a>
+                    <a href="#"><li>(주)이브제약 신규사업 투자 모집 공고</li></a>
+                    <a href="#"><li>(주)이브제약 연구원 수시채용</li></a>
+                    <a href="#"><li>EVERYEVE 유튜브 채널 개설</li></a>
+                </ul>
+            </div>
+        </div>
+        <div id="sc4-right"  class="sc4-div">
+            <a href="#">
+                <div id="sc4-right-div1" class="sc4-right-div">
+                    <div class="sc4-right-title">
+                        <div style="float: left;">&nbsp;FAQ</div>
+                        <div style="float: right;">+ &nbsp;</div>
+                        <br>
+                        <p>　(주)이브제약의 FAQ입니다.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div id="sc4-right-div2" class="sc4-right-div">
+                    <div class="sc4-right-title">
+                        <div style="float: left;">&nbsp;1:1 문의</div>
+                        <div style="float: right;">+ &nbsp;</div>
+                        <br>
+                        <p>　고객님의 궁금증을 해결해드립니다.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div style="clear:both; width: 100%; height:10%;"></div>
+    <!--footer-->
+    <footer>
+        <div id="ft-left" class="ft-div">
+            <img src="./img/eve-logo2.png" alt="white-logo">
+        </div>
+        <div id="ft-right" class="ft-div">
+            주식회사 이브제약<br>
+            서울특별시 강남구 테헤란로 981, 11층<br>
+            관리자 : 김민정<br>
+            대표번호 : 1688-2811<br>
+            팩스번호 : 02-782-2811<br>
+            사업자등록번호 : 200-77-46830　<a href="#">사업자정보확인</a><br><br>
+            Copyright ⓒ 2022 EVE PHARM. All right Reserved.
+        </div>
+    </footer>
+</body>
+</html>

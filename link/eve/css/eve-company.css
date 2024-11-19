@@ -1,0 +1,79 @@
+*{margin: 0 auto;}
+
+/*font*/
+@font-face{font-family:'SCDream3'; src:url('../font/SCDream3.woff');}
+@font-face{font-family:'SCDream5'; src:url('../font/SCDream5.woff');}
+
+
+/*body*/
+body{min-width: 1200px;}
+
+/*header*/
+header{width:90%; height:100px; padding-top:30px;}
+#hd-left{width:100px; height:70px; float: left;}
+#hd-right{
+    float:right;
+    font-size:18px; font-family: 'SCDream5';
+}
+.hd-menu{padding:45px 30px 0 30px; display: inline-block;}
+.hd-menu a{color:#000; text-decoration: none;}
+.hd-menu a:hover{color:#ed1f55; transition: 0.15s;}
+
+/*nav*/
+nav{
+    clear:both; width:90%; padding:8% 0 10% 0;
+    background-image: url('../img/company-top.jpg'); background-size: 100%; background-repeat: no-repeat;
+    font-family: 'SCDream5'; text-align: center; color:#fff;
+}
+nav img{width:100%;}
+nav p{font-size:60px; font-weight: bold;}
+nav span{font-size:20px;}
+.nav-wrap{width:50%; padding-top:5%;}
+.nav-con{
+    width:130px; height:130px; border-radius: 100%;
+    box-sizing: border-box; padding-top:35px; margin-right:8%;
+    font-size:22px; background-color:#ef4523 ;
+    display: inline-block;
+}
+#nav-right{margin-right: 0;}
+
+/*section1*/
+#sc1{clear: both; width:88%; margin-top:10%; text-align: center;}
+#sc1-img{width:20%; max-width:162px;}
+#sc1-img img{width:100%;}
+#sc1-text{
+    padding-top:2.5%; color:#ef4523;
+    font-family: 'SCDream5'; font-size:22px; line-height: 34px;
+}
+
+/*section2*/
+#sc2{clear: both; width:88%; padding-top:5%; font-family: 'SCDream5'; }
+.sc2-top{clear:both; padding-top:7%;}
+#sc2-img{width:50%;}
+#sc2-img img{width: 100%;}
+#sc2-text{
+    Width:44%; padding:8% 3% 3% 0;
+    color:#646464; font-size:20px; line-height: 30px;
+}
+#sc2-text p{color:#000; text-align: center; font-size:24px;  line-height: 75px; }
+.sc2-left{float:left;}
+.sc2-right{float:right;}
+
+#sc3{
+    clear: both; width:100%; margin-top: 10%; padding:25% 0 15% 0; max-height: 950px;
+    background-image: url('../img/eve-bottom.png'); background-repeat: no-repeat; background-size: 100%;
+    font-family: 'SCDream5'; color:#fff; font-size:32px;
+    text-align: center; line-height: 48px;
+}
+
+/*footer*/
+footer{
+  clear:both; width:100%;
+  background-color: #c8c8c8; overflow: auto;
+  font-family: 'SCDream3'; color:#fff;
+}
+.ft-div{padding:5% 0;}
+#ft-left{width:50%; float:left; text-align: center; margin-top:2%;}
+#ft-left img{width:20%;}
+#ft-right{width:47%; float: left; margin-left:3%;}
+#ft-right a{text-decoration: none; color:#ed1f55;}

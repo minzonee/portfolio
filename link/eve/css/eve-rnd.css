@@ -1,0 +1,61 @@
+*{margin: 0 auto;}
+
+/*font*/
+@font-face{font-family:'SCDream3'; src:url('../font/SCDream3.woff');}
+@font-face{font-family:'SCDream5'; src:url('../font/SCDream5.woff');}
+
+
+/*body*/
+body{min-width: 1200px;}
+
+/*header*/
+header{width:90%; height:100px; padding-top:30px;}
+#hd-left{width:100px; height:70px; float: left;}
+#hd-right{
+    float:right;
+    font-size:18px; font-family: 'SCDream5';
+}
+.hd-menu{padding:45px 30px 0 30px; display: inline-block;}
+.hd-menu a{color:#000; text-decoration: none;}
+.hd-menu a:hover{color:#ed1f55; transition: 0.15s;}
+
+/*nav*/
+nav{
+    clear:both; width:90%; padding:8% 0 10% 0;
+    background-image: url('../img/rnd-top.jpg'); background-size: 100%; background-repeat: no-repeat;
+    font-family: 'SCDream5'; text-align: center; color:#fff;
+}
+nav img{width:100%;}
+nav p{font-size:60px; font-weight: bold;}
+nav span{font-size:20px;}
+.nav-wrap{width:50%; padding-top:5%;}
+.nav-con{
+    width:130px; height:130px; border-radius: 100%;
+    box-sizing: border-box; padding-top:35px; margin-right:8%;
+    font-size:22px; background-color:#ef4523 ;
+    display: inline-block;
+}
+#nav-right{margin-right: 0;}
+
+/*section1*/
+#sc1{
+    clear: both; width:90%; margin-top: 10%;
+    font-family: 'SCDream5';
+}
+#sc1-left{
+    float: left; width:30%;
+    font-size: 60px; font-weight: bold; color:#ef4523; text-align: center;
+}
+#sc1-right{float: right; width:60%;}
+
+/*footer*/
+footer{
+  clear:both; width:100%; 
+  background-color: #c8c8c8; overflow: auto;
+  font-family: 'SCDream3'; color:#fff;
+}
+.ft-div{padding:5% 0;}
+#ft-left{width:50%; float:left; text-align: center; margin-top:2%;}
+#ft-left img{width:20%;}
+#ft-right{width:47%; float: left; margin-left:3%;}
+#ft-right a{text-decoration: none; color:#ed1f55;}
