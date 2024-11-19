@@ -1,0 +1,346 @@
+
+
+/* 공통 */
+*{
+    margin:0 auto;
+}
+
+body{
+    background-color: #F2F2F0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* 폰트 소스*/
+@font-face{font-family:'PretendardVariable'; src:url('../font/PretendardVariable.woff2');}
+@font-face{font-family:'SwilyBright-Italic'; src:url('../font/SwilyBright-Italic.woff');} /*영문만*/
+@font-face{font-family:'Nexa-Heavy'; src:url('../font/Nexa-Heavy.woff');} /*영문만*/
+
+
+/* 폰트 패밀리 공통 클래스 */
+
+.pretendard{
+    font-family:'PretendardVariable';
+}
+
+.swilybright{
+    font-family: 'SwilyBright-Italic';
+    letter-spacing: 1px;
+}
+
+.nexaheavy{
+    font-family: 'Nexa-Heavy';
+}
+
+/* 폰트 사이즈 공통 클래스 */
+
+.font16{
+    font-size:1rem;
+}
+
+.font18{
+    font-size: 1.15rem;
+}
+
+.font20{
+    font-size:1.25rem;
+}
+
+.font24{
+    font-size:1.5rem;
+}
+
+.font28{
+    font-size:1.75rem;
+}
+
+/* PC 디자인 */
+
+    /*  header(메뉴-고정) */
+    #header{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:auto;
+        line-height: 30px;
+        padding:15px 0;
+        z-index: 1;
+        background-color:rgba(242,242,240,0.3);
+        backdrop-filter: blur(15px);
+        border-bottom: 1px solid #000;
+    }
+
+    #hd-95{
+        width:95%;
+    }
+    #hd-left{
+        float:left;
+    }
+    .hd-right{
+        float:right;
+    }
+
+    .at-menu{
+        display: inline-block;
+        padding:0 20px;
+    }
+
+    .at-menu a{
+        text-decoration: none;
+        color:#000;
+        font-weight: 300;
+    }
+    .at-menu a:hover{
+        text-decoration: underline;
+    }
+    #at1-gp{
+        padding-right:0;
+    }
+
+
+    /* 섹션 공통 적용 (타이틀, 텍스트 박스) */
+    .sc-title{
+        width:100%;
+        padding:10px 0;
+        font-family: 'SwilyBright-Italic';
+        font-size:2.25rem;
+        text-align: center;
+        
+    }
+
+    .sc-text-wrap{
+        width: 100%;
+    }
+
+    .sc-text-wrap span{
+        line-height: 2.5rem;
+        font-weight: 300;
+    }
+
+    .sc-text-wrap p{
+        font-weight: 200;
+        line-height: 1.8rem;
+    }
+
+
+    /* 섹션1 (웹디자인) */
+    #sc1{
+        clear: both;
+        width:95%;
+        padding-top:150px;
+    }
+
+    #sc1-wrap{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1%;
+    }
+    #sc1 a{
+        text-decoration: none;
+        color:#000;
+    }
+    .sc1-div{
+        text-align: left;
+    }
+
+    .sc1-btn{
+        float: right;
+        background-color: rgba(255,255,255,0);
+        border:none;
+        cursor: pointer;
+        margin-top:2px;
+    }
+
+    .sc1-btn a{
+        background-color: #E9E4D8;
+    }
+
+    .sc1-btn:hover a{
+        text-decoration: underline;
+    }
+
+    .web{
+        width:100%;
+        margin: 50px 0 10px 0;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+    .web img{
+        display: block;
+        width:100%;
+        transition: all 0.3s linear;
+    }
+
+    .web:hover img{
+        transform: scale(1.04);
+    }
+
+    .web-text{
+        width:49%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    /* 섹션2 (UIUX디자인) */
+    #sc2{
+        clear: both;
+        width:100%;
+        padding-top:200px;
+    }
+
+    #sc2 a{
+        text-decoration: none;
+        color:#000;
+    }
+
+    #sc2-wrap{
+        width:95%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:1%;
+    }
+
+    .mobile{
+        width:100%;
+        margin: 50px 0 10px 0;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+    .mobile img{
+        display:block;
+        width:100%;
+        transition: all 0.3s linear;
+    }
+    .mobile:hover img{
+        transform: scale(1.04);
+    }
+
+    .sc2-btn{
+        float: right;
+        background-color: rgba(255,255,255,0);
+        border:none;
+        cursor: pointer;
+        margin-top:2px;
+    }
+
+    .sc2-btn a{
+        background-color: #E9E4D8;
+    }
+
+    .sc2-btn:hover a{
+        text-decoration: underline;
+    }
+
+    /* section3 (웹디자인) */
+    #sc3{
+        clear: both;
+        width:100%;
+        padding:200px 0;
+    }
+
+    #sc3-wrap{
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:1%;
+    }
+
+    
+    .ct{
+        width:100%;
+        margin: 50px 0 10px 0;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+    .ct img{
+        display: block;
+        width:100%;
+        transition: all 0.3s linear;
+    }
+
+    .sc3-div:hover img{
+        transform: scale(1.04);
+    }
+ 
+
+/* 모바일 설정 */
+@media screen and (max-width:700px) {
+
+    /* 헤더 */
+
+    #header{
+        padding:5px 0;
+    }
+    #hd-95{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        line-height: 40px;
+        padding:10px 0;
+        text-align: left;
+    }
+
+
+    /*section1*/
+    #sc1{
+        padding-top:150px;
+    }
+
+    #sc1-wrap{
+        display: block;
+    }
+
+    .sc1-div{
+        clear:both;
+        width:95%;
+        display: block;
+    }
+
+    .sc1-btn{
+        margin-top:10px;
+    }
+
+    /*section2*/
+
+    #sc2{
+        padding:100px 0;
+    }
+    .sc2-div{
+        clear:both;
+        width:95%;
+        display: block;
+    }
+    
+    #sc2-wrap{
+        display: block;
+    }
+
+    .sc2-btn{
+        margin-top:10px;
+    }
+
+    /*section3*/
+
+    #sc3{
+        padding: 0 0 100px 0;
+    }
+    
+    #sc3-wrap{
+        display: block;
+    }
+
+    .sc3-div{
+        clear: both;
+        width:95%;
+        display: block;
+    }
+}
