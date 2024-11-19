@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gr-EAT!</title>
+
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./css/great_2024.css">
+    <script type="text/javascript" src="./js/jquery-3.6.0.js" ></script>
+
+    <!-- 슬라이드 스크립트 -->
+    <link rel="stylesheet" href="./dist/css/swiper.min.css">
+    <script src="./dist/js/swiper.min.js"></script>
+
+
+    <!-- 아이콘 폰트 -->
+    <link href="./iconfont/css/all.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+ 
+<!-- PC 헤더 -->
+    <header>
+        <div id="hd90p">
+          <div id="homelogo">
+            <div id="hd1" class="hd">
+              <a href="./great_2024.html"><img src="./img/logo-green.png" alt="logo"></a>
+            </div>
+          </div>
+            <button class="hd btn">CART</button>
+            <button id="btn2" class="hd btn">LOGIN</button>
+        </div>
+    </header>
+
+    <!-- 모바일 헤더 -->
+
+    <div id="m_hd">
+
+
+      <!-- 로고 -->
+
+        <div id="m_homelogo">
+          <div id="m_hd1" class="m_hd">
+            <a href="./great_2024.html"><img src="./img/logo-green.png"></a>
+          </div>
+        </div>
+
+      <!-- 우측 메뉴 -->
+
+      <div id="mb_menu" class="m_hdb" onclick="openNav()">
+        &#9776;
+      </div>
+
+      <!-- 모바일 메뉴 -->
+      <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div id="m_container2">
+          <input id="m_search" type="text" placeholder="검색어를 입력하세요">
+          <button id="m_schbtn"><img src="./img/schbtn.png" alt="m_schbtn"></button>
+        </div>
+
+        <ul class="m_menu">
+          <li class="m_mnmn">
+            <a href="#">About</a>
+          </li>
+          <li class="m_mnmn"><a href="#">Shop</a>
+            <ul class="m_sub">
+              <li class="m_sub1">
+                <a href="#">- ALL</a>
+              </li>
+              <li class="m_sub2">
+                <a href="#">- Salad</a>
+              </li>
+              <li class="m_sub2">
+                <a href="#">- Sandwich</a>
+              </li>
+              <li class="m_sub2">
+                <a href="#">- Fruit</a>
+              </li>
+            </ul>
+          </li>
+          <li class="m_mnmn">
+            <a href="#">News</a>
+          </li>
+          <li class="m_mnmn">
+            <a href="#">Customer</a>
+          </li>
+        </ul>
+      </div>
+
+        <button type="button" id="m_btn2" class="m_hdb m_btn">LOGIN</button>
+        <button type="button" class="m_hdb m_btn">CART</button>
+    </div>
+
+
+        <!-- 모바일 메뉴 스크립트 -->
+            <script>
+
+              function openNav(){
+                  document.getElementById("mySidenav").style.width="100%";
+              }
+
+              function closeNav(){document.getElementById("mySidenav").style.width="0";}
+
+             
+            </script>
+  </div>
+
+ 
+<!-- PC nav / 카테고리, 검색 -->
+    <nav>
+      <div id="nav90p">
+        <div id="container">
+          <ul class="menu">
+            <li class="mnmn"><a href="#">About</a></li>
+            <li class="mnmn"><a href="#">Shop</a>
+              <ul class="sub">
+                <li class="sub1"><a href="#">ALL</a></li>
+                <li class="sub2"><a href="#">Salad</a></li>
+                <li class="sub2"><a href="#">Sandwich</a></li>
+                <li class="sub2"><a href="#">Fruit</a></li>
+            </ul>
+          </li>
+            <li class="mnmn"><a href="#">News</a></li>
+            <li class="mnmn"><a href="#">Customer</a></li>
+          </ul>
+      </div>
+      <div id="container2">
+        <button id="schbtn"><img src="./img/schbtn.png" alt="schbtn"></button>
+        <input id="search" type="text" placeholder="검색어를 입력하세요.">
+      </div>
+      </div>  
+    </nav>
+
+    <!-- PC nav 메뉴 스크립트-->
+    <script>
+      $(function(){
+          $("ul.menu li").hover(function(){
+              $(">ul:not(:animated)",this).slideDown("fast");
+          },
+          function(){
+              $(">ul",this).slideUp("fast");
+          }
+          );
+      });
+  </script>
+
+     
+
+<!-- PC , 모바일 섹션1 / 메인 슬라이드 배너 -->
+  <section id="sc1">
+    <div id="sc1_80p">
+      <div class="slideshow-container">
+        <a href="#">
+          <div class="mySlide fade">
+            <img class="slide_img" src="./img/web-mainbanner01.jpg" style="width:100%" alt="web-mainbanner01">
+            <img class="m_slide_img" src="./img/mb-mainbanner01.jpg" style="width:100%" alt="mb-mainbanner02">
+          </div>
+        </a>
+        <a href="#">
+          <div class="mySlide fade">
+            <img class="slide_img" src="./img/web-mainbanner02.jpg" style="width:100%" alt="web-mainbanner02">
+            <img class="m_slide_img" src="./img/mb-mainbanner02.jpg" style="width:100%" alt="mb-mainbanner02">
+          </div>
+        </a>
+        <a href="#">
+          <div class="mySlide fade">
+            <img class="slide_img" src="./img/web-mainbanner03.jpg" style="width:100%" alt="web-mainbanner03">
+            <img class="m_slide_img" src="./img/mb-mainbanner03.jpg" style="width:100%" alt="mb-mainbanner03">
+          </div>
+        </a>
+
+        <!-- 좌우 화살표 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+    <!-- 하단 점 세 개 -->
+    <div style="text-align:center;">
+        <span class="dot" onclick="currentSlides(1)"></span>
+        <span class="dot" onclick="currentSlides(2)"></span>
+        <span class="dot" onclick="currentSlides(3)"></span>
+
+    </div>
+    </div>
+
+
+    <!-- 슬라이드 스크립트 -->
+      <script>
+
+
+        // 수동 슬라이드 설정
+        var slideIndex=1;
+        showSlides(slideIndex);
+
+        function plusSlides(n){ //좌우 화살표를 누를 때 +1 또는 -1이 됨
+            showSlides(slideIndex +=n); // slideIndex = slideIndex + n;
+        }
+
+        function currentSlides(n){ //아래 점을 누를 때(1, 2, 3)
+            showSlides(slideIndex = n); 
+        }
+
+        function showSlides(n){
+            var i
+            var slides=document.getElementsByClassName("mySlide");
+            var dots=document.getElementsByClassName("dot");
+
+            if(n>slides.length){slideIndex=1}  //n값이 3보다 크면 초기값 1을 넣어줌 
+            if(n<1){slideIndex=slides.length}  //n값이 1보다 작아지면 전체 갯수를 넣어줌
+
+            for(i=0; i<slides.length; i++){
+                slides[i].style.display="none"; //전체 display:none;
+            }
+
+            for(i=0; i<dots.length; i++){
+                dots[i].className=dots[i].className.replace("active", "") // dot이 진해지는 것을 모두 막아줌
+            }
+
+            slides[slideIndex-1].style.display="block"; //사진 slideIndex 1,2,3 => [0], [1], [2] block 상태
+            dots[slideIndex-1].className +=" active"; //slideIndex=1, 2, 3 =>[0], [1], [2] active 상태
+        }
+
+    </script>
+
+    <script>
+        
+      //오토 슬라이드 설정
+        var slideIndex2=0;
+        showSlides2();
+
+        function showSlides2(){
+            var i;
+            var slides=document.getElementsByClassName("mySlide");
+            var dots=document.getElementsByClassName("dot");
+            for(i=0; i<slides.length; i++){
+                slides[i].style.display="none";
+            }
+            slideIndex2++; //slideIndex가 1이 됨
+
+            if(slideIndex2>slides.length){slideIndex2=1} //총 사진의 갯수보다 커지면 초기값 1로 돌아감
+            
+            for(i=0; i<dots.length; i++){
+                dots[i].className=dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex2-1].style.display="block";
+            dots[slideIndex2-1].className +=" active";
+            setTimeout(showSlides2, 4000); //1000이 1초
+        }
+
+    </script>
+  </section>
+  
+  <!-- PC 섹션2 / 베스트 상품 -->
+  <section id="sc2">
+    <div id="sc2_90p">
+      <div id="sc2_t1">
+        BEST Gr-EAT!👍
+      </div>
+      <div id="sc2_pd_wrap">
+        
+          <div id="sc2_t2" class="sc2_product">
+            <a href="#">
+              <div id="sc2_img1" class="sc2_img">
+                <img src="./img/sal1.png" alt="sal1">
+              </div>
+              <div id="sc2_text1" class="sc2_text product">
+                아보카도 치킨 샐러드
+                <img src="./img/best.png" alt="best">
+                <img src="./img/hot.png" alt="hot">
+                <br>
+                <span class="price">4,900원</span>
+              </div>
+            </a>
+          </div>
+        
+          <div id="sc2_t3" class="sc2_product">
+            <a href="#">
+              <div id="sc2_img2" class="sc2_img">
+                <img src="./img/sal2.png" alt="sal2">
+              </div>
+              <div id="sc2_text2" class="sc2_text product">
+                슈림프 크림치즈 샐러드
+                <img src="./img/best.png" alt="best">
+                <img src="./img/hot.png" alt="hot">
+                <br>
+                <span class="price">5,500원</span>
+              </div>
+            </a>
+          </div>
+
+          <div id="sc2_t4" class="sc2_product">
+            <a href="#">
+              <div id="sc2_img3" class="sc2_img">
+                <img src="./img/san1.png" alt="san1">
+              </div>
+              <div id="sc2_text3" class="sc2_text product">
+                호밀 햄치즈 샌드위치
+                <img src="./img/best.png" alt="best">
+                <img src="./img/hot.png" alt="hot">
+                <br>
+                <span class="price">4,500원</span>
+              </div>
+            </a>
+          </div>
+
+          <div id="sc2_t5" class="sc2_product">
+            <a href="#">
+              <div id="sc2_img4" class="sc2_img">
+                <img src="./img/sal3.png" alt="sal3">
+              </div>
+              <div id="sc2_text4" class="sc2_text product">
+                방울토마토 카프레제
+                <img src="./img/best.png" alt="best">
+                <img src="./img/hot.png" alt="hot">
+                <br>
+                <span class="price">5,500원</span>
+              </div>
+            </a>
+          </div>
+
+      </div>  
+    </div>
+  </section>
+
+  <!-- 모바일 섹션2 / 베스트 상품 -->
+  <section id="m_sc2">
+    <div id="m_sc2_90p">
+
+      <div id="m_sc2_t1">
+        BEST Gr-EAT👍
+      </div>
+
+      <div id="m_sc2_t2" class="m_sc2_product">
+        <a href="#">
+          <div id="m_sc2_img1" class="m_sc2_img">
+            <img src="./img/sal1.png" alt="sal1">
+          </div>
+          <div id="m_sc2_text1" class="m_sc2_text">
+            아보카도 치킨 샐러드<br>
+            <span class="price">4,900원</span>
+          </div>
+        </a>
+      </div>
+
+      <div id="m_sc2_t3" class="m_sc2_product">
+        <a href="#">
+          <div id="m_sc2_img2" class="m_sc2_img">
+            <img src="./img/sal2.png" alt="sal2">
+          </div>
+          <div id="m_sc2_text2" class="m_sc2_text">
+            슈림프 크림치즈 샐러드<br>
+            <span class="price">5,500원</span>
+          </div>
+        </a>
+      </div>
+
+      <div id="sc2_t4" class="m_sc2_product">
+        <a href="#">
+          <div id="m_sc2_img3" class="m_sc2_img">
+            <img src="./img/san1.png" alt="san1">
+          </div>
+          <div id="m_sc2_text3" class="m_sc2_text">
+            호밀 햄치즈 샌드위치<br>
+            <span class="price">4,500원</span>
+          </div>
+        </a>
+      </div>
+
+      <div id="m_sc2_t5" class="m_sc2_product">
+        <a href="#">
+          <div id="m_sc2_img4" class="m_sc2_img">
+            <img src="./img/sal3.png" alt="sal3">
+          </div>
+          <div id="m_sc2_text4" class="m_sc2_text">
+            방울토마토 카프레제<br>
+            <span class="price">5,500원</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PC 섹션3 / 신상품 -->
+
+  <section id="pd2">
+    <div id="pd2_90p" class="sslideshow-container">
+        <p>ALL new Gr-EAT ✨</p>
+
+          <div class="smySlide sfade">
+
+            <div id="pd2_b1_img1" class="pd2_b1">
+              <a href="#">
+                <img src="./img/ssal3.png" alt="ssal3">
+                <br><span class="product">클린 베지 샐러드<img src="./img/new.png" alt="new"></span><br>
+                <span class="price"><span class="sale">3,900원</span> 3,700원</span>  
+              </a>
+            </div>
+            
+
+            <div id="pd2_b1_img2" class="pd2_b1">
+              <a href="#">
+                <img src="./img/ssal2.png" alt="ssal2">
+                <br><span class="product">두부 스테이크 샐러드<img src="./img/new.png" alt="new"><img src="./img/hot.png" alt="hot"></span>
+                <br><span class="price"><span class="sale">4,900원</span> 4,700원</span>  
+              </a>
+            </div>
+            
+
+            
+            <div id="pd2_b1_img3" class="pd2_b1">
+              <a href="#">
+                <img src="./img/ssan6.png" alt="Sandwich2">
+                <br><span class="product">카프레제 크로아상 샌드위치<img src="./img/new.png" alt="new"></span>
+                <br><span class="price"><span class="sale">5,000원</span> 4,800원</span>  
+              </a>
+            </div>
+            
+
+            <div id="pd2_b1_img4" class="pd2_b1">
+              <a href="#">
+                <img src="./img/ssan5.png" alt="Sandwich1">
+                <br><span class="product">클래식 크로아상 샌드위치<img src="./img/new.png" alt="new"></span>
+                <br><span class="price"><span class="sale">4,500원</span> 4,300원</span>    
+              </a>
+            </div>
+            
+              <div id="pd2_b1_img5" class="pd2_b1 pd2_last">
+                <a href="#">
+                  <img src="./img/ssal4.png" alt="ssal4">
+                  <br><span class="product">탄두리 퀘사디아 샐러드<span><img src="./img/new.png" alt="new"><img src="./img/hot.png" alt="hot"></span>
+                  <br><span class="price"><span class="sale">5,900원</span> 5,600원</span>  
+                </a>
+              </div>
+
+          </div>
+  
+          <div class="smySlide sfade">
+
+              <div id="pd2_b2_img1" class="pd2_b1">
+                <a href="#">
+                <img src="./img/ssal5.png" alt="ssal5">
+                <br><span class="product">불고기 퀘사이다 샐러드<img src="./img/new.png" alt="new"></span>
+                <br><span class="price"><span class="sale">5,900원</span> 5,500원</span>  
+              </a>
+            </div>
+            
+            <div id="pd2_b2_img2" class="pd2_b1">
+              <a href="#">
+                <img src="./img/ssan4.png" alt="Sandwich3">
+                <br><span class="product">호밀 터키 샌드위치<img src="./img/new.png" alt="new"></span>
+                <br><span class="price"><span class="sale">4,500원</span> 4,300원</span>  
+              </a>
+            </div>
+            
+            
+            <div id="pd2_b2_img3" class="pd2_b1">
+              <a href="#">
+                <img src="./img/pas2.png" alt="pasta2">
+                <br><span class="product">방토 바질 누들 샐러드<img src="./img/new.png" alt="new"><img src="./img/hot.png" alt="hot"></span>
+                <br><span class="price"><span class="sale">5,500원</span> 5,300원</span>  
+              </a>
+            </div>
+
+
+            <div id="pd2_b2_img4" class="pd2_b1">
+              <a href="#">
+                <img src="./img/pas1.png" alt="pasta1">
+                <br><span class="product">트리플 치킨 누들 샐러드<img src="./img/new.png" alt="new"><img src="./img/hot.png" alt="hot"></span>
+                <br><span class="price"><span class="sale">6,500원</span> 6,200원</span>  
+              </a>
+            </div>
+
+
+            <div id="pd2_b2_img5" class="pd2_b1 pd2_last">
+              <a href="#">
+                <img src="./img/ssal1.png" alt="ssal1">
+                <br><span class="product">그릴드 연어 샐러드<img src="./img/new.png" alt="new"><img src="./img/hot.png" alt="hot"></span>
+                <br><span class="price"><span class="sale">5,900원</span> 5,600원</span>  
+              </a>
+            </div>
+
+          </div>
+
+          <!-- 좌우 화살표 -->
+          <a class="sprev" onclick="splusSlides(-1)">&#10094;</a>
+          <a class="snext" onclick="splusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- 하단 점 -->
+    <div id="sdotss" style="text-align:center;">
+        <span class="sdot" onclick="scurrentSlides(1)"></span>
+        <span class="sdot" onclick="scurrentSlides(2)"></span>
+        <!-- <span class="sdot" onclick="scurrentSlides(3)"></span> -->
+    </div>
+</section>
+
+<!-- 슬라이드 스크립트 -->
+    <script>      
+        // 수동 슬라이드 설정
+        var sslideIndex=1;
+        sshowSlides(sslideIndex);
+
+        function splusSlides(n){ //좌우 화살표를 누를 때 +1 또는 -1이 됨
+            sshowSlides(sslideIndex +=n); // slideIndex = slideIndex + n;
+        }
+
+        function scurrentSlides(n){ //아래 점을 누를 때(1, 2, 3)
+            sshowSlides(sslideIndex = n); 
+        }
+
+        function sshowSlides(n){
+            var s
+            var sslides=document.getElementsByClassName("smySlide");
+            var sdots=document.getElementsByClassName("sdot");
+
+            if(n>sslides.length){sslideIndex=1}  //n값이 3보다 크면 초기값 1을 넣어줌 
+            if(n<1){sslideIndex=sslides.length}  //n값이 1보다 작아지면 전체 갯수를 넣어줌
+
+            for(s=0; s<sslides.length; s++){
+                sslides[s].style.display="none"; //전체 display:none;
+            }
+
+            for(s=0; s<sdots.length; s++){
+                sdots[s].className=sdots[s].className.replace(" active", "") // dot이 진해지는 것을 모두 막아줌
+            }
+
+            sslides[sslideIndex-1].style.display="block"; //사진 slideIndex 1,2,3 => [0], [1], [2] block 상태
+            sdots[sslideIndex-1].className +=" active"; //slideIndex=1, 2, 3 =>[0], [1], [2] active 상태
+        }
+
+    </script>
+
+    <script>
+      
+        //오토 슬라이드 설정
+        var sslideIndex2=0;
+        sshowSlides2();
+
+        function sshowSlides2(){
+            var s;
+            var sslides=document.getElementsByClassName("smySlide");
+            var sdots=document.getElementsByClassName("sdot");
+            for(s=0; s<sslides.length; s++){
+                sslides[s].style.display="none";
+            }
+            sslideIndex2++; //slideIndex가 1이 됨
+
+            if(sslideIndex2>sslides.length){sslideIndex2=1} //총 사진의 갯수보다 커지면 초기값 1로 돌아감
+            
+            for(s=0; s<sdots.length; s++){
+                sdots[s].className=sdots[s].className.replace(" active", "");
+            }
+
+            sslides[sslideIndex2-1].style.display="block";
+            sdots[sslideIndex2-1].className +=" active";
+            setTimeout(sshowSlides2, 5000); //1000이 1초
+        }
+    </script>
+
+
+<section id="m_pd2">
+  <div id="m_pd2_90p" class="m_slideshow-container">
+      <p>　ALL-New Gr-EAT ✨</p>
+        <div class="m_mySlide m_fade">
+          <a href="#">
+            <div id="m_pd2_b1_img1" class="m_pd2_b1">
+              <img src="./img/ssal3.png" alt="ssal3">
+              <br>클린 베지 샐러드
+              <br><span class="price"><span class="sale">3,900원</span> 3,700원</span>  
+            </div>
+          </a>
+          </div>
+
+        <div class="m_mySlide m_fade">
+          <a href="#">
+            <div id="m_pd2_b1_img2" class="m_pd2_b1">
+              <img src="./img/ssal2.png" alt="ssal2">
+              <br>두부 스테이크 샐러드
+              <br><span class="price"><span class="sale">4,900원</span> 4,700원</span>  
+            </div>
+          </a>
+        </div>
+
+        <div class="m_mySlide m_fade">
+          <a href="#">
+            <div id="m_pd2_b1_img3" class="m_pd2_b1">
+              <img src="./img/ssan6.png" alt="Sandwich2">
+              <br>카프레제 크로아상 샌드위치
+              <br><span class="price"><span  class="sale">5,000원</span> 4,800원</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="m_mySlide m_fade">
+          <a href="#">
+            <div id="m_pd2_b1_img4" class="m_pd2_b1">
+              <img src="./img/ssan5.png" alt="Sandwich1">
+              <br>클래식 크로아상 샌드위치
+              <br><span class="price"><span  class="sale">4,500원</span> 4,300원</span>
+            </div>
+          </a>
+          </div>
+
+        <div class="m_mySlide m_fade">
+          <a href="#">
+            <div id="m_pd2_b1_img5" class="m_pd2_b1 m_pd2_last">
+              <img src="./img/ssal4.png" alt="ssal4">
+              <br>탄두리 퀘사디아 샐러드
+              <br><span class="price"><span  class="sale">5,900원</span> 5,600원</span>   
+            </div>
+          </a>
+        </div>
+
+        <!-- 좌우 화살표 -->
+        <a class="m_prev" onclick="m_plusSlides(-1)">&#10094;</a>
+        <a class="m_next" onclick="m_plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- 하단 점 -->
+  <div id="m_dotss" style="text-align:center;">
+      <span class="m_dot" onclick="m_currentSlides(1)"></span>
+      <span class="m_dot" onclick="m_currentSlides(2)"></span>
+      <span class="m_dot" onclick="m_currentSlides(3)"></span>
+      <span class="m_dot" onclick="m_currentSlides(4)"></span>
+      <span class="m_dot" onclick="m_currentSlides(5)"></span>
+      <!-- <span class="sdot" onclick="scurrentSlides(3)"></span> -->
+  </div>
+</section>
+
+<!-- 슬라이드 스크립트 -->
+  <script>      
+      // 수동 슬라이드 설정
+      var m_slideIndex=1;
+      m_showSlides(m_slideIndex);
+
+      function m_plusSlides(n){ //좌우 화살표를 누를 때 +1 또는 -1이 됨
+          m_showSlides(m_slideIndex +=n); // slideIndex = slideIndex + n;
+      }
+
+      function m_currentSlides(n){ //아래 점을 누를 때(1, 2, 3)
+          m_showSlides(m_slideIndex = n); 
+      }
+
+      function m_showSlides(n){
+          var m
+          var m_slides=document.getElementsByClassName("m_mySlide");
+          var m_dots=document.getElementsByClassName("m_dot");
+
+          if(n>m_slides.length){m_slideIndex=1}  //n값이 3보다 크면 초기값 1을 넣어줌 
+          if(n<1){m_slideIndex=m_slides.length}  //n값이 1보다 작아지면 전체 갯수를 넣어줌
+
+          for(m=0; m<m_slides.length; m++){
+              m_slides[m].style.display="none"; //전체 display:none;
+          }
+
+          for(m=0; m<m_dots.length; m++){
+              m_dots[m].className=m_dots[m].className.replace(" m_active", "") // dot이 진해지는 것을 모두 막아줌
+          }
+
+          m_slides[m_slideIndex-1].style.display="block"; //사진 slideIndex 1,2,3 => [0], [1], [2] block 상태
+          m_dots[m_slideIndex-1].className +=" m_active"; //slideIndex=1, 2, 3 =>[0], [1], [2] active 상태
+      }
+
+  </script>
+
+  <script>
+    
+      //오토 슬라이드 설정
+      var m_slideIndex2=0;
+      m_showSlides2();
+
+      function m_showSlides2(){
+          var m;
+          var m_slides=document.getElementsByClassName("m_mySlide");
+          var m_dots=document.getElementsByClassName("m_dot");
+          for(m=0; m<m_slides.length; m++){
+              m_slides[m].style.display="none";
+          }
+          m_slideIndex2++; //slideIndex가 1이 됨
+
+          if(m_slideIndex2>m_slides.length){m_slideIndex2=1} //총 사진의 갯수보다 커지면 초기값 1로 돌아감
+          
+          for(m=0; m<m_dots.length; m++){
+              m_dots[m].className=m_dots[m].className.replace(" m_active", "");
+          }
+
+          m_slides[m_slideIndex2-1].style.display="block";
+          m_dots[m_slideIndex2-1].className +=" m_active";
+          setTimeout(m_showSlides2, 4000); //1000이 1초
+      }
+  </script>
+
+
+<!-- PC 섹션4 / 추천상품 -->
+  <section id="recommend">
+    <div id="rc_85p">
+        <p class="rc_title">취향 따라 Gr-EAT!💯</p>
+        <div id="btnbar">
+            <button id="rcbtn1" class="rcbtn">든든-잇</button>
+            <button id="rcbtn2" class="rcbtn">클린-잇</button>
+            <button id="rcbtn3" class="rcbtn">단백질-잇</button>
+            <button id="rcbtn4" class="rcbtn">비건-잇</button>
+            <button id="rcbtn5" class="rcbtn">클래식-잇</button>
+            <button id="rcbtn6" class="rcbtn">색다른-잇</button>
+        </div>
+
+        
+          <div id="rc_left" class="rc_box">
+            <a href="#">
+              <div class="rc_img">
+                <img id="rc_img1" src="./img/ssal4.png" alt="ssal4">
+              </div>
+              <div id="rc_text1"class="rc_text">
+                <p id="rc_name1">탄두리 퀘사디아 샐러드</p>
+                <br>샐러드가 토핑이 된다?!<br>
+                아낌없이 담은 탄두리 샐러드를 또띠아와 즐겨보세요!<br>
+                더 위대-해진 그레-잇은 옵션에서 선택할 수 있어요.
+              </div>
+            </a>
+          </div>
+
+          <div id="rc_right" class="rc_box">
+            <a href="#">
+              <div class="rc_img">
+                <img id="rc_img2" src="./img/ssan1.png" alt="ssan1">
+              </div>
+              <div id="rc_text2" class="rc_text">
+                <p>불고기 반미 샌드위치</p>
+                <br>배고플 땐 고기 앞으로!<br>
+                단짠단짠 불고기는 언제 먹어도 맛있어요!<br>
+              </div>
+            </a>
+          </div>
+        
+    </div>
+</section>
+
+<!-- PC 섹션4 버튼 스크립트 -->
+
+<script>
+      $("#rcbtn1").click(function(){
+      $("#rc_img1").attr("src", "./img/ssal4.png").attr("alt", "ssal4");
+      $("#rc_text1").html("<p>탄두리 퀘사디아 샐러드</p><br>샐러드가 토핑이 된다?!<br>아낌없이 담은 탄두리 샐러드를 또띠아와 즐겨보세요!<br>더 위대-해진 그레-잇은 옵션에서 선택할 수 있어요.");
+      $("#rc_img2").attr("src", "./img/ssan1.png").attr("alt", "ssan1");
+      $("#rc_text2").html("<p>불고기 반미 샌드위치</p><br>배고플 땐 고기 앞으로!<br>단짠단짠 불고기는 언제 먹어도 맛있어요!<br>");
+      $("#rcbtn1").css({"background-color":"olive", "color":"white"});
+      $("#rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+  });
+
+  $("#rcbtn2").click(function(){
+      $("#rc_img1").attr("src", "./img/ssal3.png").attr("alt", "ssal3");
+      $("#rc_text1").html("<p>클린 베지 샐러드</p><br>맛까지 클린할 거란 생각은 No!<br>가볍지만 허전하지 않을 거예요.<br>더 위대-해진 그레-잇은 옵션에서 선택할 수 있어요.");
+      $("#rc_img2").attr("src", "./img/ssan4.png").attr("alt", "ssan4");
+      $("#rc_text2").html("<p>호밀 터키 샌드위치</p><br>걱정하지 마세요.<br>맛있고 건강한 호밀이잖아요.<br>");
+      $("#rcbtn2").css({"background-color":"olive", "color":"white"});
+      $("#rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+  });
+
+  $("#rcbtn3").click(function(){
+      $("#rc_img1").attr("src", "./img/pas1.png").attr("alt", "pasta1");
+      $("#rc_text1").html("<p>트리플 치킨 누들 샐러드</p><br>치킨이 세 배면 맛도 세 배!<br>갈릭버터에 구운 닭가슴살로 근손실 걱정 없이!<br>더 위대-해진 그레-잇은 옵션에서 선택할 수 있어요.");
+      $("#rc_img2").attr("src", "./img/ssal1.png").attr("alt", "ssal1");
+      $("#rc_text2").html("<p>그릴드 연어 샐러드</p><br>이젠 샐러드도 겉바속촉!<br>맛있게 구운 연어는 차갑게 먹어도 맛있어요!<br>더 위대-해진 그레-잇은 옵션에서 선택할 수 있어요.");
+      $("#rcbtn3").css({"background-color":"olive", "color":"white"});
+      $("#rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+  });
+
+  $("#rcbtn4").click(function(){
+      $("#rc_img1").attr("src", "./img/ssal2.png").attr("alt", "ssal2");
+      $("#rc_text1").html("<p>두부 스테이크 샐러드</p><br>그레-잇의 더 완벽한 비건 프로젝트<br>이젠 스테이크도 비건으로 즐겨요!<br>더 위대-해진 그레-잇은 옵션에서 선택할 수 있어요.");
+      $("#rc_img2").attr("src", "./img/ssal6.png").attr("alt", "ssal6");
+      $("#rc_text2").html("<p>허브솔트 느타리 샐러드</p><br>그레-잇의 더 완벽한 비건 프로젝트<br>허브솔트로 간한 느타리가 듬뿍!<br>더 위대-해진 그레-잇은 옵션에서 선택할 수 있어요.");
+      $("#rcbtn4").css({"background-color":"olive", "color":"white"});
+      $("#rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+  });
+
+  $("#rcbtn5").click(function(){
+      $("#rc_img1").attr("src", "./img/ssan5.png").attr("alt", "ssan5");
+      $("#rc_text1").html("<p>클래식 크로아상 샌드위치</p><br>재료가 익숙하다고 맛도 익숙하진 않을 거예요.<br>맛있게, 더 맛있게!<br>");
+      $("#rc_img2").attr("src", "./img/sal1.png").attr("alt", "sal1");
+      $("#rc_text2").html("<p>아보카도 치킨 샐러드</p><br>그레-잇 부동의 1위 샐러드!<br>감사한 마음을 담아 치킨을 증량했다는 소식 : )<br>더 위대-해진 그레-잇은 옵션에서 선택할 수 있어요.");
+      $("#rcbtn5").css({"background-color":"olive", "color":"white"});
+      $("#rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+  });
+
+  $("#rcbtn6").click(function(){
+      $("#rc_img1").attr("src", "./img/pas2.png").attr("alt", "pasta2");
+      $("#rc_text1").html("<p>방토 바질 누들 샐러드</p><br>샐러드의 끝없는 변신!<br>올리브 오일+소금+후추+토마토+바질=사랑♥<br>더 위대-해진 그레-잇은 옵션에서 선택할 수 있어요.");
+      $("#rc_img2").attr("src", "./img/ssan6.png").attr("alt", "ssan6");
+      $("#rc_text2").html("<p>카프레제 크로아상 샌드위치</p><br>맛있는 거 안에 맛있는 거!<br>맛보는 순간 반할 수밖에 없을 걸요?<br>");
+      $("#rcbtn6").css({"background-color":"olive", "color":"white"});
+      $("#rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+  });
+  </script>
+
+  <!-- 모바일 섹션4 / 추천상품 -->
+
+  <section id="m_recommend">
+    <div id="m_rc_90p">
+      <p class="m_rc_title">취향 따라 Gr-EAT!💯</p>
+      <div id="m_btnbar">
+          <button id="m_rcbtn1" class="m_rcbtn">든든-잇</button>
+          <button id="m_rcbtn2" class="m_rcbtn">클린-잇</button>
+          <button id="m_rcbtn3" class="m_rcbtn">단백질-잇</button><br>
+          <button id="m_rcbtn4" class="m_rcbtn">비건-잇</button>
+          <button id="m_rcbtn5" class="m_rcbtn">클래식-잇</button>
+          <button id="m_rcbtn6" class="m_rcbtn">색다른-잇</button>
+      </div>
+
+      <div id="m_rc_left" class="m_rc_box">
+        <a href="#">
+          <div class="m_rc_img">
+            <img id="m_rc_img1" src="./img/ssal4.png" alt="ssal4">
+          </div>
+          <div id="m_rc_text1"class="m_rc_text">
+            탄두리 퀘사디아 샐러드
+          </div>
+        </a>
+      </div>
+
+      <div id="m_rc_right" class="m_rc_box">
+        <a href="#">
+          <div class="m_rc_img">
+            <img id="m_rc_img2" src="./img/ssan1.png" alt="ssan1">
+          </div>
+          <div id="m_rc_text2" class="m_rc_text product">
+            불고기 반미 샌드위치
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 모바일 섹션4 버튼 스크립트 -->
+
+    <script>
+      $("#m_rcbtn1").click(function(){
+      $("#m_rc_img1").attr("src", "./img/ssal4.png").attr("alt", "ssal4");
+      $("#m_rc_text1").html("<p>탄두리 퀘사디아 샐러드</p>");
+      $("#m_rc_img2").attr("src", "./img/ssan1.png").attr("alt", "ssan1");
+      $("#m_rc_text2").html("<p>불고기 반미 샌드위치</p>");
+      $("#m_rcbtn1").css({"background-color":"olive", "color":"white"});
+      $("#m_rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      });
+
+      $("#m_rcbtn2").click(function(){
+      $("#m_rc_img1").attr("src", "./img/ssal3.png").attr("alt", "ssal3");
+      $("#m_rc_text1").html("<p>클린 베지 샐러드</p>");
+      $("#m_rc_img2").attr("src", "./img/ssan4.png").attr("alt", "ssan4");
+      $("#m_rc_text2").html("<p>호밀 터키 샌드위치</p>");
+      $("#m_rcbtn2").css({"background-color":"olive", "color":"white"});
+      $("#m_rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      });
+
+      $("#m_rcbtn3").click(function(){
+      $("#m_rc_img1").attr("src", "./img/pas1.png").attr("alt", "pasta1");
+      $("#m_rc_text1").html("<p>트리플 치킨 누들 샐러드</p>");
+      $("#m_rc_img2").attr("src", "./img/ssal1.png").attr("alt", "ssal1");
+      $("#m_rc_text2").html("<p>그릴드 연어 샐러드</p>");
+      $("#m_rcbtn3").css({"background-color":"olive", "color":"white"});
+      $("#m_rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      });
+
+      $("#m_rcbtn4").click(function(){
+      $("#m_rc_img1").attr("src", "./img/ssal2.png").attr("alt", "ssal2");
+      $("#m_rc_text1").html("<p>두부 스테이크 샐러드</p>");
+      $("#m_rc_img2").attr("src", "./img/ssal6.png").attr("alt", "ssal6");
+      $("#m_rc_text2").html("<p>허브솔트 느타리 샐러드</p>");
+      $("#m_rcbtn4").css({"background-color":"olive", "color":"white"});
+      $("#m_rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      });
+
+      $("#m_rcbtn5").click(function(){
+      $("#m_rc_img1").attr("src", "./img/ssan5.png").attr("alt", "ssan5");
+      $("#m_rc_text1").html("<p>클래식 크로아상 샌드위치</p>");
+      $("#m_rc_img2").attr("src", "./img/sal1.png").attr("alt", "sal1");
+      $("#m_rc_text2").html("<p>아보카도 치킨 샐러드</p>");
+      $("#m_rcbtn5").css({"background-color":"olive", "color":"white"});
+      $("#m_rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn6").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      });
+
+      $("#m_rcbtn6").click(function(){
+      $("#m_rc_img1").attr("src", "./img/pas2.png").attr("alt", "pasta2");
+      $("#m_rc_text1").html("<p>방울토마토 바질 누들 샐러드</p>");
+      $("#m_rc_img2").attr("src", "./img/ssan6.png").attr("alt", "ssan6");
+      $("#m_rc_text2").html("<p>카프레제 크로아상 샌드위치</p>");
+      $("#m_rcbtn6").css({"background-color":"olive", "color":"white"});
+      $("#m_rcbtn2").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn3").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn4").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn5").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      $("#m_rcbtn1").css({"background-color":"rgba(255,255,255,0)", "color":"olive","font-weight":"400"});
+      });
+    </script>
+
+
+  <!-- PC 섹션5 서브 배너-->
+  <section id="sc5">
+    <div id="sc5_full">
+      <div id="sc5_left" class="sc5_div">
+        매일 뭐 먹을지<br>고민이라면?<br><br><br>
+        <a href="#">
+          <button type="button" id="sc5_btn1" class="sc5_btn">Gr-EAT! 정기배송</button>
+        </a>
+      </div>
+      <div id="sc5_right" class="sc5_div">
+        Get Gr-EAT이<br>처음이라면!<br><br><br>
+        <a href="#">
+          <button type="button" id="sc5_btn2" class="sc5_btn">웰컴 100원 딜</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- 모바일 섹션5 서브배너 -->
+  <section id="m_sc5">
+    <div id="m_sc5_top" class="m_sc5_div">
+      매일 뭐 먹을지<br>고민이라면?<br>
+      <a href="#">
+        <button type="button" id="m_sc5_btn1" class="m_sc5_btn">Gr-EAT! 정기배송</button>
+      </a>
+    </div>
+    <div id="m_sc5_bt" class="m_sc5_div">
+      Get Gr-EAT이 처음이라면!<br>
+      <a href="#">
+        <button type="button" id="m_sc5_btn2" class="m_sc5_btn">웰컴 100원 딜</button>
+      </a>
+    </div>
+  </section>
+
+
+
+<!-- PC 섹션6 / 뉴스  -->
+  <section id="sc4">
+    <div id="sc4_90p">
+
+        <div id="sc4_left">
+          <div id="sc4_l_title" class="sc4_title">Notice</div>
+          <table class="sc4_table">
+            <tr class="sc4_tr">
+              <td class="sc4_td1">설연휴 배송 안내</td>
+              <td class="sc4_td2">22.01.25</td>
+            </tr>
+            <tr class="sc4_tr">
+              <td class="sc4_td1">그레-잇 프루츠 런칭 기념 이벤트</td>
+              <td class="sc4_td2">22.12.20</td>
+            </tr>
+            <tr class="sc4_tr">
+              <td class="sc4_td1">택배 파업 장기화로 인한 택배사 변경 안내</td>
+              <td class="sc4_td2">21.12.10</td>
+            </tr>
+            <tr class="sc4_tr">
+              <td class="sc4_td1">그레-잇 인 망원 오프라인 매장 오픈 이벤트</td>
+              <td class="sc4_td2">21.11.07</td>
+            </tr>
+            <tr class="sc4_tr">
+              <td class="sc4_td1">양상추 수급 불안정에 따른 임시 판매 중단</td>
+              <td class="sc4_td2">21.10.30</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="sc4_right">
+            <div id="sc4_r_title" class="sc4_title">Now</div>
+            <div id="sc4_r_con">
+              <div id="sc4_r_img">
+                <img id="sc4_r_img1" src="./img/sns_facebook.jpg" alt="facebook_img">
+              </div>
+              <div id="sc4_r_text">
+                그레-잇 인 망원 오픈!<p><br>그레-잇 인 망원에서만<br>즐길 수 있는 포인트!</p>
+              </div>
+            </div>
+            <div id="sc4_r_btns">
+              <button id="sc4_sns1" class="sc4_sns"><i class="fab fa-facebook-f"></i></button>
+              <button id="sc4_sns2" class="sc4_sns"><i class="fab fa-instagram"></i></button >
+              <button id="sc4_sns3" class="sc4_sns"><i class="fab fa-youtube"></i></button>
+              <button id="sc4_sns4" class="sc4_sns"><i class="fab fa-twitter"></i></button >
+            </div>
+        </div>
+      </div> 
+
+        <!-- section4 버튼 스크립트 -->
+        <script>
+            $("#sc4_sns1").click(function(){
+              $("#sc4_r_img1").attr("src", "./img/sns_facebook.jpg").attr("alt", "facebook_img");
+              $("#sc4_r_text").html("그레-잇 인 망원 오픈!<p><br>그레-잇 인 망원에서만<br>즐길 수 있는 포인트!</p>");
+              $("#sc4_sns1").css("color","olive");
+              $("#sc4_sns2").css("color","#ddd");
+              $("#sc4_sns3").css("color","#ddd");
+              $("#sc4_sns4").css("color","#ddd");
+          });
+
+          $("#sc4_sns2").click(function(){
+              $("#sc4_r_img1").attr("src", "./img/sns_insta.jpg").attr("alt", "insta_img");
+              $("#sc4_r_text").html("EVERYONE Gr-EAT!<p><br>그레-잇 해시태그로 즐기는<br>모두의 그레-잇!</p>");
+              $("#sc4_sns2").css("color","olive");
+              $("#sc4_sns1").css("color","#ddd");
+              $("#sc4_sns3").css("color","#ddd");
+              $("#sc4_sns4").css("color","#ddd");
+          });
+
+          $("#sc4_sns3").click(function(){
+              $("#sc4_r_img1").attr("src", "./img/sns_ytb.jpg").attr("alt", "ytb_img");
+              $("#sc4_r_text").html("그레-잇 야채 손질법<p><br>더 깨끗하고 건강한<br>그레-잇만의 비법</p>");
+              $("#sc4_sns3").css("color","olive");
+              $("#sc4_sns1").css("color","#ddd");
+              $("#sc4_sns2").css("color","#ddd");
+              $("#sc4_sns4").css("color","#ddd");
+          });
+
+          $("#sc4_sns4").click(function(){
+              $("#sc4_r_img1").attr("src", "./img/sns_twitter.jpg").attr("alt", "twitter_img");
+              $("#sc4_r_text").html("상생하는 그레-잇<p><br>농가 협약으로<br>더 따뜻해진 그레-잇</p>");
+              $("#sc4_sns4").css("color","olive");
+              $("#sc4_sns1").css("color","#ddd");
+              $("#sc4_sns2").css("color","#ddd");
+              $("#sc4_sns3").css("color","#ddd");
+          });
+
+    
+        </script>
+
+
+  </section>
+
+  <section id="m_sc4">
+    <div id="m_sc4_90p">
+        <div id="m_sc4_left">
+          <div id="m_sc4_l_title" class="m_sc4_title">
+            Notice
+          </div>
+          <table class="m_sc4_table">
+            <tr class="m_sc4_tr">
+              <td class="m_sc4_td1">설연휴 배송 안내</td>
+              <td class="m_sc4_td2">22.01.25</td>
+            </tr>
+            <tr class="m_sc4_tr">
+              <td class="m_sc4_td1">그레-잇 프루츠 런칭 기념 이벤트</td>
+              <td class="m_sc4_td2">22.12.20</td>
+            </tr>
+            <tr class="m_sc4_tr">
+              <td class="m_sc4_td1">택배 파업 장기화로 인한 택배사...</td>
+              <td class="m_sc4_td2">21.12.10</td>
+            </tr>
+            <tr class="m_sc4_tr">
+              <td class="m_sc4_td1">그레-잇 인 망원 오프라인 매장...</td>
+              <td class="m_sc4_td2">21.11.07</td>
+            </tr>
+            <tr class="m_sc4_tr">
+              <td class="m_sc4_td1">양상추 수급 불안정에 따른 임시...</td>
+              <td class="m_sc4_td2">21.10.30</td>
+            </tr>
+          </table>
+        </div>
+        <div id="m_sc4_right">
+            <div id="m_sc4_r_title" class="m_sc4_title">Now</div>
+            
+            <div id="m_sc4_r_btns">
+              <button id="m_sc4_sns1" class="m_sc4_sns"><i class="fab fa-facebook-f"></i></button>
+              <button id="m_sc4_sns2" class="m_sc4_sns"><i class="fab fa-instagram"></i></button >
+              <button id="m_sc4_sns3" class="m_sc4_sns"><i class="fab fa-youtube"></i></button>
+              <button id="m_sc4_sns4" class="m_sc4_sns"><i class="fab fa-twitter"></i></button >
+            </div>
+
+            <div id="m_sc4_r_con">
+              <a href="#">
+                <div id="m_sc4_r_img">
+                  <img id="m_sc4_r_img1" src="./img/sns_facebook.jpg" alt="facebook_img">
+                </div>
+                <div id="m_sc4_r_text">
+                  그레-잇 인 망원 오픈!<p>그레-잇 인 망원에서만<br>즐길 수 있는 포인트!</p>
+                </div>
+              </a>
+            </div> 
+
+        </div>
+      </div>
+
+        <!-- section4 버튼 스크립트 -->
+        <script>
+            $("#m_sc4_sns1").click(function(){
+              $("#m_sc4_r_img1").attr("src", "./img/sns_facebook.jpg").attr("alt", "facebook_img");
+              $("#m_sc4_r_text").html("그레-잇 인 망원 오픈!<p>그레-잇 인 망원에서만<br>즐길 수 있는 포인트!</p>");
+              $("#m_sc4_sns1").css("color","olive");
+              $("#m_sc4_sns2").css("color","#ddd");
+              $("#m_sc4_sns3").css("color","#ddd");
+              $("#m_sc4_sns4").css("color","#ddd");
+          });
+
+          $("#m_sc4_sns2").click(function(){
+              $("#m_sc4_r_img1").attr("src", "./img/sns_insta.jpg").attr("alt", "insta_img");
+              $("#m_sc4_r_text").html("EVERYONE Gr-EAT!<p>그레-잇 해시태그로 즐기는<br>모두의 그레-잇!</p>");
+              $("#m_sc4_sns2").css("color","olive");
+              $("#m_sc4_sns1").css("color","#ddd");
+              $("#m_sc4_sns3").css("color","#ddd");
+              $("#m_sc4_sns4").css("color","#ddd");
+          });
+
+          $("#m_sc4_sns3").click(function(){
+              $("#m_sc4_r_img1").attr("src", "./img/sns_ytb.jpg").attr("alt", "ytb_img");
+              $("#m_sc4_r_text").html("그레-잇 야채 손질법<p>더 깨끗하고 건강한<br>그레-잇만의 비법</p>");
+              $("#m_sc4_sns3").css("color","olive");
+              $("#m_sc4_sns1").css("color","#ddd");
+              $("#m_sc4_sns2").css("color","#ddd");
+              $("#m_sc4_sns4").css("color","#ddd");
+          });
+
+          $("#m_sc4_sns4").click(function(){
+              $("#m_sc4_r_img1").attr("src", "./img/sns_twitter.jpg").attr("alt", "twitter_img");
+              $("#m_sc4_r_text").html("상생하는 그레-잇<p>농가 협약으로<br>더 따뜻해진 그레-잇</p>");
+              $("#m_sc4_sns4").css("color","olive");
+              $("#m_sc4_sns1").css("color","#ddd");
+              $("#m_sc4_sns2").css("color","#ddd");
+              $("#m_sc4_sns3").css("color","#ddd");
+          });
+
+    
+        </script>
+
+
+  </section>
+
+      
+<!-- PC, 모바일 푸터 footer -->
+      <footer id="ft1">
+        <div id="ft1_90p">
+          <div id="ft1_left">
+              <img src="./img/logo-dark.png" alt="logo_black">
+          </div>
+
+          <div id="ft1_cen">
+            Get Gr-EAT!　|　주소 : 전라북도 전주시 완산구 팔달로 135 겟그레잇<br>
+            대표 : 김민정　|　고객센터 : 1577-4545(평일 10:00-17:30 / 주말,공휴일 휴무)<br>
+            사업자등록번호 : 955-24-15424 <button id="ft1_btn1">사업자정보확인</button>　|　통신판매업 신고번호 : 2021-전북전주-547호<br>
+            개인정보관리 책임자 : 김민아
+          </div>
+
+          <div id="ft1_right">
+            <div id="ft1_r1">Follow Us</div>
+            <div id="ft_sns1" class="ft1_sns"><i class="fab fa-twitter"></i></div>
+            <div class="ft1_sns"><i class="fab fa-youtube"></i></div>
+            <div class="ft1_sns"><i class="fab fa-instagram"></i></div>
+            <div class="ft1_sns"><i class="fab fa-facebook-f"></i></div>
+          </div>
+        </div>
+      </footer>
+
+      <footer id="m_ft1">
+        <div id="m_ft1_90p">
+          <div id="m_ft1_left">
+            <img src="./img/logo-dark.png" alt="logo_black">
+          </div>
+
+          <div id="m_ft1_right">
+            <div id="m_ft_sns1" class="m_ft1_sns"><i class="fab fa-twitter"></i></div>
+            <div class="m_ft1_sns"><i class="fab fa-youtube"></i></div>
+            <div class="m_ft1_sns"><i class="fab fa-instagram"></i></div>
+            <div class="m_ft1_sns"><i class="fab fa-facebook-f"></i></div>
+          </div>
+
+          <div id="m_ft1_cen">
+            Get Gr-EAT! | 주소:전라북도 전주시 완산구 팔달로 135 겟그레잇<br>
+            대표:김민정 | 고객센터:1577-4545(평일 10:00-17:30/주말,공휴일 휴무)<br>
+            사업자등록번호:955-24-15424 <button id="m_ft1_btn1">사업자정보확인</button><br>
+            통신판매업 신고번호:2021-전북전주-547호<br>
+            개인정보관리 책임자:김민아
+          </div>
+        </div>
+      </footer>
+
+      <footer id="ft2">
+        <div id="ft2_warp">
+          <button id="ft2_btn1" class="ft2_btn">회사소개 </button>
+          <button id="ft2_btn2" class="ft2_btn">이용약관 </button>
+          <button id="ft2_btn3" class="ft2_btn">개인정보처리방침 </button>
+          <button id="ft2_btn4" class="ft2_btn">이메일무단수집거부 </button>
+        </div>
+      </footer>
+
+      <footer id="m_ft2">
+        <div id="m_ft2_50p">
+          <button id="m_ft2_btn1" class="m_ft2_btn">회사소개 </button>
+          <button id="m_ft2_btn2" class="m_ft2_btn">이용약관 </button>
+          <button id="m_ft2_btn3" class="m_ft2_btn">개인정보처리방침 </button>
+          <button id="m_ft2_btn4" class="m_ft2_btn">이메일무단수집거부 </button>
+        </div>
+      </footer>
+
+      <footer id="ft3">
+        <div id="ft3_wrap">
+          All Rights Reserved © GET GREAT CO., LTD. 전라북도 전주시 완산구 팔달로 135 겟그레잇
+        </div>
+      </footer>
+
+      <footer id="m_ft3">
+        <div id="m_ft3_90p">
+          All Rights Reserved © GET GREAT CO., LTD.<br>전라북도 전주시 완산구 팔달로 135 겟그레잇
+        </div>
+      </footer>
+
+</body>
+</html>
